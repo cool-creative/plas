@@ -1,0 +1,4 @@
+- scroll trigger need to be refreshed
+- browser or ScrollTrigger  can store  scroll memory - clear it
+- scrollbar takes space, even `stable` may not work and snap
+- 
