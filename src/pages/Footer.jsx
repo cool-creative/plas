@@ -4,7 +4,7 @@ export default function Footer() {
   return (
     <footer
       style={{ clipPath: "polygon(0 0, 100% 0, 100% 100%, 0 100%)" }}
-      className="relative h-96 w-full bg-white text-black"
+      className="relative h-96 w-full bg-white text-black p-8"
     >
       {/* sticky area */}
       <div className="relative h-[calc(100vh+384px)] top-[-100vh]">

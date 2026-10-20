@@ -126,7 +126,7 @@ export default function Navbar() {
       >
         <div className="links flex flex-col gap-6 text-center">
           {ITEMS.map((item) => (
-            <a key={item} href="#" className="link text-5xl font-medium text-white">
+            <a key={item} href="#" className="link text-5xl font-serif italic font-medium text-white">
               {item}
             </a>
           ))}
