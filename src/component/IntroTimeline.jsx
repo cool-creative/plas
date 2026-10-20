@@ -95,6 +95,7 @@ export default function Intro({ heroRef }) {
       .to(img, {
         scale    : 0.3, 
         duration : 0.6, 
+        transformOrigin: "center center",
         ease     : "power3.inOut" 
       }, "split") 
       .to(groupEls[0],{
@@ -110,7 +111,9 @@ export default function Intro({ heroRef }) {
       
       // 0.2s break, then expand phase: img grows while the text scales out and fades
       .addLabel("expand", "+=0.2")
-      .to(img, { scale: 1, duration: 1.6, ease: "power3.inOut" }, "expand")
+      .to(img, { scale: 1, clipPath: 'inset(0% 0% 0% 0%)', transformOrigin: "center center", duration: 1.6, ease: "power3.inOut", onComplete: () => {
+         gsap.set(img, { clearProps: "clipPath" });
+      } }, "expand")
       .to(groupEls, {
         scale: 0.7,
         opacity: 0,

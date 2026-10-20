@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@import 'lenis/dist/lenis.css';
 
 
 html {
@@ -8,3 +9,6 @@ html::-webkit-scrollbar {
   display: none;                   /* older Chrome/Edge, Safari */
 }
 
+img{
+  clip-path: 'polygon(10% 0%, 100% 0%, 100% 90%, 90% 100%, 0% 100%, 0% 10%)';
+}
